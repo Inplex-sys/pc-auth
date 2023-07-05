@@ -68,7 +68,7 @@ Contributions to this project are welcome! If you find any bugs or have suggesti
 
 ## License
 
-This project is licensed under the [GNU License](https://github.com/Inplex-sys/pc-auth/LICENCE), it requires that any modifications or derivative works of your project be released under the same license, thus preserving the open-source nature of the software.
+This project is licensed under the [GNU License](https://github.com/Inplex-sys/pc-auth/LICENSE), it requires that any modifications or derivative works of your project be released under the same license, thus preserving the open-source nature of the software.
 
 ## Disclaimer
 
