@@ -32,6 +32,7 @@ class AuthCard extends React.Component {
         ipcRenderer.send('get-authenticator', {
             'uuid': this.props.uuid
         });
+        
         ipcRenderer.on('get-authenticator-response', (event, response) => {
             if (response.success) {
                 this.code.current.innerText = response.code;
@@ -59,6 +60,10 @@ class AuthCard extends React.Component {
                 }, 1000);
             }
         });
+
+        return () => {
+            ipcRenderer.removeAllListeners('get-authenticator-response');
+        }
     }
 
     deleteAuthenticator = () => {

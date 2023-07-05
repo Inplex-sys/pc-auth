@@ -11,6 +11,10 @@ const Reset = () => {
             if (response.success)
                 window.location.href = "#/";
         })
+
+        return () => {
+            ipcRenderer.removeAllListeners('reset-container-response');
+        }
     }
 
     return (

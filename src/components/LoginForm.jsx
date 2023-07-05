@@ -18,7 +18,12 @@ const LoginForm = () => {
                 navigate('/manager');
             else
                 document.querySelector("small.text-danger").innerHTML = "Incorrect password";
+            
         })
+
+        return () => {
+            ipcRenderer.removeAllListeners('auth-response');
+        }
     }
 
     useEffect(() => {

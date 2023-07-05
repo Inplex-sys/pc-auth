@@ -14,6 +14,10 @@ const Auth = () => {
         ipcRenderer.on('container-exist-response', (event, response) => {
             setContainerExist(response.success);
         });
+
+        return () => {
+            ipcRenderer.removeAllListeners('container-exist-response');
+        }
     }, []);
 
     return (

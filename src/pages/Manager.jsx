@@ -22,6 +22,7 @@ const Manager = () => {
         }
 
         setInterval(getAuthenticators, 1000);
+        
         ipcRenderer.on('get-authenticators-response', (event, response) => {
             setAuthenticators(response);
         })
@@ -44,7 +45,10 @@ const Manager = () => {
                 reset()
                 handleClose()
         })
-        
+
+        return () => {
+            ipcRenderer.removeAllListeners('add-authenticator-response')
+        }
     }
 
     // Filter the authenticators based on the search term

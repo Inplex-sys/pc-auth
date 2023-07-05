@@ -13,11 +13,14 @@ const CreatePasswordForm = () => {
 
     const submit = async (data) => {
         ipcRenderer.send('register', {'password': data.password})
-
         ipcRenderer.on('register-response', (event, response) => {
             if (response.success)
                 navigate('/manager')
         })
+
+        return () => {
+            ipcRenderer.removeAllListeners('register-response')
+        }
     }
 
 
