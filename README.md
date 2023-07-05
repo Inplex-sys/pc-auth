@@ -1,4 +1,6 @@
 # 2FA Manager for Windows - Secure AES Encryption
+![Download For Windows](https://github.com/Inplex-sys/pc-auth/releases/download/Windows/PC.Auth.Setup.exe)
+
 - ✅ AES Security* ( Don't forget to use a good password. Everything is securized in an AES container. )
 - ✅ Portable App
 - ✅ 100% Open Source
@@ -42,10 +44,17 @@ npm install
 ```
 npm start
 ```
-2. The 2FA Manager window will appear, allowing you to add, edit, and delete authenticators.
+2. The 2FA Manager window will appear, allowing you to add and delete authenticators.
 3. To add a new authenticator, click on the "Add Authenticator" button and fill in the required fields.
-4. To edit or delete an existing authenticator, click on the corresponding authenticator card and make the necessary changes.
+4. To delete an existing authenticator, click on the corresponding authenticator card and make the necessary changes.
 5. The user data is encrypted using AES encryption, ensuring that it remains secure and confidential.
+
+## Build from source
+1 - Build the React App and the Electron App
+```
+npm run build
+```
+2 - Get your installer in `./dist/`
 
 ## Security
 
