@@ -8,7 +8,6 @@ const { ipcRenderer } = window.require('electron');
 
 const CreatePasswordForm = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-
     const navigate = useNavigate();
 
     const submit = async (data) => {

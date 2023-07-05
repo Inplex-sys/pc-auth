@@ -114,7 +114,7 @@ const Manager = () => {
             </Modal>
             <div className="m-5 pt-5">
                 <div className="row">
-                    <div className="col-12 mb-3">
+                    <div className="bg-dark-1 p-3 mb-3 rounded">
                         <input
                             type="text"
                             className="form-control"
@@ -123,7 +123,7 @@ const Manager = () => {
                             onChange={handleSearchChange}
                         />
                     </div>
-                    {filteredAuthenticators.map((authenticator, index) => (
+                    {filteredAuthenticators.map( (authenticator, index) => (
                         <AuthCard
                             user={authenticator.user}
                             password={authenticator.password}
@@ -133,15 +133,13 @@ const Manager = () => {
                         />
                     ))}
                     {authenticators.length === 0 && (
-                        <div className="col-12">
-                            <div className="card bg-dark-1 shadow mb-3">
-                                <div className="card-body text-center">
-                                    <h5 className="card-title text-white">No Authenticators</h5>
-                                    <p className="card-text text-white">Click on the button on the top to add a new authenticator.</p>
-                                </div>
+                        <div className="card bg-dark-1 shadow mb-3">
+                            <div className="card-body text-center">
+                                <h5 className="card-title text-white">No Authenticators</h5>
+                                <p className="card-text text-white">Click on the button on the top to add a new authenticator.</p>
                             </div>
                         </div>
-                    )}                    
+                    )}               
                 </div>
             </div>
         </>

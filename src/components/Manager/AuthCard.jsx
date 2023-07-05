@@ -35,6 +35,8 @@ class AuthCard extends React.Component {
         
         ipcRenderer.on('get-authenticator-response', (event, response) => {
             if (response.success) {
+                ipcRenderer.removeAllListeners('get-authenticator-response');
+
                 this.code.current.innerText = response.code;
                 
                 this.show.current.disabled = true;
@@ -60,10 +62,6 @@ class AuthCard extends React.Component {
                 }, 1000);
             }
         });
-
-        return () => {
-            ipcRenderer.removeAllListeners('get-authenticator-response');
-        }
     }
 
     deleteAuthenticator = () => {
