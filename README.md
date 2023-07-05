@@ -1,7 +1,16 @@
 # 2FA Manager for Windows - Secure AES Encryption
+- ✅ AES Security* ( Don't forget to use a good password. Everything is securized in an AES container. )
+- ✅ Portable App
+- ✅ 100% Open Source
+- ✅ Privacy Friendly ( you don't even need internet )
 
-![logo192](https://github.com/Inplex-sys/pc-auth/assets/69421356/f905a174-8984-4a82-a144-f4a6b0dbc860)
-
+<div align="center">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" height="100">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg" height="100">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" height="100">
+</div>
+<br>
+<br>
 
 https://github.com/Inplex-sys/pc-auth/assets/69421356/88e185c1-61a6-4a8a-86d9-f377f757025c
 
