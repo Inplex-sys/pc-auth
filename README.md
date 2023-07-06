@@ -52,6 +52,7 @@ npm start
 ## Build from source
 1 - Build the React App and the Electron App
 ```
+npm i electron-builder -g
 npm run build
 ```
 2 - Get your installer in `./dist/`
