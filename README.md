@@ -1,5 +1,5 @@
 # 2FA Manager for Windows - Secure AES Encryption
-![Download For Windows](https://github.com/Inplex-sys/pc-auth/releases/download/Windows/PC.Auth.Setup.exe)
+![Download For Windows](https://github.com/Inplex-sys/pc-auth/releases/download/Windows/pc-auth.Setup.0.1.0.exe)
 
 - ✅ AES Security* ( Don't forget to use a good password. Everything is securized in an AES container. )
 - ✅ Portable App
