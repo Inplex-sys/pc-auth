@@ -24,8 +24,7 @@ function createWindow() {
         icon: path.join(__dirname, 'build/logo192.png'),
         webPreferences: {
             nodeIntegration: true,
-            contextIsolation: false,
-            preload: 'build/preload.js'
+            contextIsolation: false
         }
     })
 
