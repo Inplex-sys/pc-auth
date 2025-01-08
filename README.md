@@ -1,3 +1,8 @@
+```diff
+- This repo is deprecated and the new version is written in rust, the project has moved to: 
++ https://github.com/Inplex-sys/tauth
+```
+
 # 2FA Manager for Windows - Secure AES Encryption
 ![Download For Windows](https://github.com/Inplex-sys/pc-auth/releases/download/Windows/pc-auth.Setup.0.1.0.exe)
 
